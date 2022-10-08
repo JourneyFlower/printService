@@ -1,0 +1,9 @@
+D:\work\保定风帆\501包装车间\Doc\Code\printServer2.0\obj\Debug\printServer2.0.csproj.CoreCompileInputs.cache
+D:\work\保定风帆\501包装车间\Doc\Code\printServer2.0\bin\Debug\printServer.exe.config
+D:\work\保定风帆\501包装车间\Doc\Code\printServer2.0\bin\Debug\printServer.exe
+D:\work\保定风帆\501包装车间\Doc\Code\printServer2.0\bin\Debug\printServer.pdb
+D:\work\保定风帆\501包装车间\Doc\Code\printServer2.0\bin\Debug\Newtonsoft.Json.dll
+D:\work\保定风帆\501包装车间\Doc\Code\printServer2.0\bin\Debug\Newtonsoft.Json.xml
+D:\work\保定风帆\501包装车间\Doc\Code\printServer2.0\obj\Debug\printServer2.0.csproj.CopyComplete
+D:\work\保定风帆\501包装车间\Doc\Code\printServer2.0\obj\Debug\printServer.exe
+D:\work\保定风帆\501包装车间\Doc\Code\printServer2.0\obj\Debug\printServer.pdb

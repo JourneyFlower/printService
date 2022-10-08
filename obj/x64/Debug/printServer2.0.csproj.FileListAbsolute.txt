@@ -1,0 +1,2 @@
+D:\work\保定风帆\501包装车间\Doc\Code\printServer2.0\obj\x64\Debug\printServer2.0.csprojAssemblyReference.cache
+D:\work\保定风帆\501包装车间\Doc\Code\printServer2.0\obj\x64\Debug\printServer2.0.csproj.CoreCompileInputs.cache

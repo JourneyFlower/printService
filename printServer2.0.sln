@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "printServer2.0", "printServer2.0.csproj", "{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Debug|x64.ActiveCfg = Debug|x64
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Debug|x64.Build.0 = Debug|x64
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Debug|x86.ActiveCfg = Debug|x86
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Debug|x86.Build.0 = Debug|x86
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Release|x64.ActiveCfg = Release|x64
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Release|x64.Build.0 = Release|x64
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Release|x86.ActiveCfg = Release|x86
+		{273D1466-4FAB-4B38-AC28-5C0A9824A3E1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23DF6CFD-389C-41CF-9266-5D3A11B0F5B5}
+	EndGlobalSection
+EndGlobal
