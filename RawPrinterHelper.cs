@@ -91,12 +91,12 @@ namespace printServer
         }
 
         /// <summary>
-        /// 发送字符串命令到打印机
+        /// 打印标签带z只有英文字符的ZPL指令
         /// </summary>
         /// <param name="printerName">打印机名称</param>
         /// <param name="zplString">ZPL文件中的内容</param>
         /// <returns>true / false</returns>
-        public static bool SendStringToPrinter(string printerName, string zplString)
+        /*public static bool SendStringToPrinter(string printerName, string zplString)
         {
             IntPtr pBytes;
             Int32 dwCount;
@@ -105,7 +105,12 @@ namespace printServer
 
             // 假设打印机需要ANSI文本，将字符串转换成ANSI文本。
             pBytes = Marshal.StringToCoTaskMemAnsi(zplString);
-
+            //pBytes = Marshal.StringToBSTR(zplString);
+            //pBytes = Marshal.StringToCoTaskMemAuto(zplString);
+            //pBytes = Marshal.StringToCoTaskMemUni(zplString);
+            //pBytes = Marshal.StringToHGlobalAnsi(zplString);
+            //pBytes = Marshal.StringToHGlobalAuto(zplString);
+            //pBytes = Marshal.StringToHGlobalUni(zplString);
             // 将转换后的ANSI字符串发送到打印机
             if (SendBytesToPrinter(printerName, pBytes, dwCount))
             {
@@ -116,11 +121,37 @@ namespace printServer
             {
                 return false;
             }
+        }*/
+
+
+
+        /// <summary>
+        /// 打印标签带有中文字符的ZPL指令
+        /// </summary>
+        /// <param name="printerName"></param>
+        /// <param name="szString"></param>
+        /// <returns></returns>
+        public static bool SendStringToPrinter(string printerName, string szString)
+        {
+            //转换格式
+            byte[] bytes = Encoding.GetEncoding("GB2312").GetBytes(szString);
+            IntPtr ptr = Marshal.AllocHGlobal(bytes.Length + 2);
+            try
+            {
+                Marshal.Copy(bytes, 0, ptr, bytes.Length);
+                SendBytesToPrinter(printerName, ptr, bytes.Length);
+            }
+            catch
+            {
+            }
+            finally
+            {
+                Marshal.FreeCoTaskMem(ptr);
+            }
+            return true;
         }
 
 
-
-        
 
         [DllImport("fnthex32.dll")]
         public static extern int GETFONTHEX(

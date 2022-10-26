@@ -1,6 +1,7 @@
 ﻿using printServer.utils;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -70,9 +71,17 @@ namespace printServer
         }
 
         public static int SendZPL(List<PrintParam> pList) {
-            foreach(PrintParam print in pList)
+            string strCmd1 = @"^XA
+                                ^CW1,E:SIMSUN.TTF
+                                ^SEE:GB18030.DAT^CI26
+                                ^FO50,60^A1N,20,20^FD简体中文abcd1234^FS
+                                ^FO50,160^A1N,30,30^FD简体中文abcd1234^FS
+                                ^FO50,260^A1N,50,50^FD简体中文abcd1234^FS
+                                ^XZ";
+            RawPrinterHelper.SendStringToPrinter(Config("Machine"), contextTo(strCmd1));
+            foreach (PrintParam print in pList)
             {
-                RawPrinterHelper.SendStringToPrinter(Config("Machine"),contextTo( print.cmd));
+                RawPrinterHelper.SendStringToPrinter(Config("Machine"), contextTo(print.cmd));
             }
             return 1;
         }
